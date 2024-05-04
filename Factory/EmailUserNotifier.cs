@@ -8,9 +8,9 @@ namespace Factory
 {
     public class EmailUserNotifier : IUserNotifier
     {
-        public void NotifyUser(int id)
+        public void NotifyUser(int userId)
         {
-            Console.WriteLine($"Notified User {id} by email.");
+            Console.WriteLine($"Notified User {userId} by email");
         }
     }
 }

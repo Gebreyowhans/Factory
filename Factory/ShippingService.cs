@@ -8,15 +8,17 @@ namespace Factory
 {
     public class ShippingService
     {
-        NotificationServiceProvider _serviceProvider;
-        public ShippingService(NotificationServiceProvider serviceProvider)
+        NotificationServiceProvider _notificationService;
+
+        public ShippingService(NotificationServiceProvider notificationServiceProvider)
         {
-            _serviceProvider = serviceProvider;
+
+            _notificationService = notificationServiceProvider;
         }
 
         public void ShipItem()
         {
-            _serviceProvider.GetUserNotifier().NotifyUser(1);
+            _notificationService.GetUserNotifier().NotifyUser(1);
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Factory
 {
     public interface IUserNotifier
     {
-        void NotifyUser(int id);
+        void NotifyUser(int userId);
     }
 }

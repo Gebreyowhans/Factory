@@ -8,9 +8,9 @@ namespace Factory
 {
     public class TestUserNotifier : IUserNotifier
     {
-        public void NotifyUser(int id)
+        public void NotifyUser(int userId)
         {
-            Console.WriteLine($"Pretending to notify user {id}.");
+            Console.WriteLine($"Test notification to User {userId}");
         }
     }
 }
